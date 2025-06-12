@@ -4,7 +4,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import BuildIcon from "@mui/icons-material/Build";
 
-const options = ["Modifier", "Supprimer"];
+const options = ["Modify", "Delete"];
 
 const ITEM_HEIGHT = 48;
 

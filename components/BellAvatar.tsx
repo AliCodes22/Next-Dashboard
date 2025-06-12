@@ -12,7 +12,7 @@ const BellAvatar = () => {
 
       <div className="flex flex-col pr-4">
         <span className="text-sm font-medium">Ali</span>
-        <span className="text-xs text-gray-500">Bienvenu!</span>
+        <span className="text-xs text-gray-500">Welcome!</span>
       </div>
     </div>
   );

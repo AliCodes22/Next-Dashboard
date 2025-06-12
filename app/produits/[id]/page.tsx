@@ -44,21 +44,16 @@ const ProductDetailsPage = async ({
     id: string;
   }>;
 }) => {
-  // on utilise la technique destruturing pour avoir le id
   const { id } = await params;
 
-  // si le id est superieur a 5, on retourne le hook notFound
-  // qui nous dirige vers la page not-found
   if (Number(id) > 7) {
     notFound();
   }
 
-  // on fetch le produit en utilisant le id
   const product = await fetch(
     `https://api.jsoning.com/mock/public/products/${id}`
   );
 
-  // si le produit n'existe pas, on retourne notFound
   if (!product) {
     notFound();
   }
@@ -68,7 +63,7 @@ const ProductDetailsPage = async ({
   return (
     <>
       <div className="ml-10 font-bold text-xl">
-        <h1 className="text-lg font-bold">Produit {id}</h1>
+        <h1 className="text-lg font-bold">Product {id}</h1>
       </div>
       <section className="p-6 bg-gray-50 min-h-screen mx-auto ml-10">
         <hr />
@@ -90,7 +85,7 @@ const ProductDetailsPage = async ({
                 </div>
                 <div className="flex items-center gap-2 mt-4">
                   <span className="text-lg font-semibold text-yellow-300">
-                    Prix:
+                    Price:
                   </span>
                   <span className="text-xl font-bold text-black-600  px-3 py-1 rounded-lg">
                     ${productData.price}
@@ -107,10 +102,10 @@ const ProductDetailsPage = async ({
               </div>
 
               <div>
-                <DialogDemo action="Modifier" />
+                <DialogDemo action="Update" />
               </div>
               <Button className=" mt-6 bg-red-500 hover:bg-red-500 hover:bg-opacity-80">
-                Supprimer
+                Delete
               </Button>
             </CardContent>
           </Card>
@@ -119,7 +114,7 @@ const ProductDetailsPage = async ({
           <Button asChild>
             <Link href="/">
               <IoMdArrowRoundBack />
-              Retour aux produits
+              Back to Home Page
             </Link>
           </Button>
         </div>

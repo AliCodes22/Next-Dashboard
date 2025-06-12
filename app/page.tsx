@@ -25,23 +25,22 @@ const HomePage = async (): Promise<JSX.Element> => {
     .slice(0, 6)
     // on exclut webcam
     .filter((item) => item.name !== "1080p Webcam");
-  console.log(halfData);
 
   return (
     <>
-      <h1 className="text-xl font-bold ml-10 text-lg">Mes Produits</h1>
+      <h1 className="text-xl font-bold ml-10 text-lg">My Products</h1>
       <div className="p-6 bg-gray-50 min-h-screen mx-auto ml-10">
         {/* Header Section */}
 
         <div className="flex justify-between items-center mb-6">
           <div>
             <h1 className="text-2xl font-semibold text-blue-800">
-              Gestion des produits
+              Product Dashboard
             </h1>
-            <p className="text-gray-600 text-sm">Liste de vos produits</p>
+            <p className="text-gray-600 text-sm">List of Products</p>
           </div>
 
-          <DialogDemo action="Ajouter" />
+          <DialogDemo action="Add" />
         </div>
 
         {/* Grid Layout */}

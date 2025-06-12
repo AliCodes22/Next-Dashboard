@@ -16,12 +16,12 @@ import Image from "next/image";
 
 const items = [
   {
-    title: "Produits",
+    title: "Products",
     url: "/",
     icon: ChartColumnIncreasing,
   },
   {
-    title: "Mes Categories",
+    title: "Categories",
     url: "/categories",
     icon: ShoppingCart,
   },
@@ -32,7 +32,6 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarContent>
         <SidebarGroup>
-          <Image src={Logo} alt="XpertSource Logo" />
           <SidebarGroupLabel>Menu</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -56,7 +55,7 @@ export function AppSidebar() {
             <SidebarMenuButton asChild>
               <a href="#">
                 <LogOut color="#d7cc00" />
-                <span>Deconnexion</span>
+                <span>Sign Out</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>

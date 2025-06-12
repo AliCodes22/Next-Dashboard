@@ -65,10 +65,10 @@ export default function MyForm({
               name="name_8313633293"
               render={({ field }) => (
                 <FormItem className="max-w-xl">
-                  <FormLabel>Titre</FormLabel>
+                  <FormLabel>Title</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="Titre du produit"
+                      placeholder="Product Title"
                       className="w-full"
                       defaultValue=""
                       type="text"
@@ -88,7 +88,7 @@ export default function MyForm({
           name="name_6518654102"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Prix</FormLabel>
+              <FormLabel>Price</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Prix"
@@ -111,7 +111,7 @@ export default function MyForm({
               <FormLabel>Description</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Description du produit"
+                  placeholder="Write a short description"
                   className="resize-none h-20"
                   defaultValue=""
                   {...field}
@@ -129,7 +129,7 @@ export default function MyForm({
           render={({ field }) => (
             <FormItem className="flex flex-row items-center justify-between rounded-lg border-none p-4">
               <div className="space-y-1">
-                <FormLabel>Rupture du stock</FormLabel>
+                <FormLabel>Out of Stock</FormLabel>
               </div>
               <FormControl>
                 <Switch
@@ -148,10 +148,10 @@ export default function MyForm({
             setOpen(false);
           }}
         >
-          Annuler
+          Cancel
         </Button>
         <Button className="bg-neutral text-yellow-500" type="submit">
-          Enregistrer
+          Save
         </Button>
       </form>
     </Form>

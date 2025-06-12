@@ -27,14 +27,14 @@ export default function ImgMediaCard({ id, price, number }) {
               component="h3"
               className="text-blue-400 font-bold"
             >
-              Produit {number + 1}
+              Product {number + 1}
             </Typography>
 
             {/* Aligning dollar sign and price */}
             <div className="flex items-center space-x-2">
               <CircleDollarSign size={20} color="#e2db00" />
               <Typography gutterBottom variant="h6" component="h3">
-                Prix: {price}$
+                Price: {price}$
               </Typography>
             </div>
 
@@ -42,7 +42,7 @@ export default function ImgMediaCard({ id, price, number }) {
             <div className="flex items-center space-x-2">
               <FileText size={20} color="#e1e122" />
               <Typography variant="body2" color="textSecondary" component="p">
-                Description du produit {number + 1}...
+                Description of Product {number + 1}...
               </Typography>
             </div>
           </CardContent>
