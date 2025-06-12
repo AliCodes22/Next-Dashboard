@@ -33,9 +33,10 @@ Users can add, edit, and delete products with key details such as name, price, d
 
 🚦 Getting Started
 
-git clone https://github.com/AliCodes22/project-2.git
+git clone https://github.com/AliCodes22/Next-Dashboard.git
 cd project-2
-npm run dev or yarn dev
+npm run dev 
+yarn dev
 
 
 
