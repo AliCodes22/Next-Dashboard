@@ -1,4 +1,6 @@
 🛍️ Product Management Dashboard
+
+
 A modern, responsive dashboard for managing products — built with Next.js (App Router), shadcn/ui, Material UI (MUI), React Hook Form, and Tailwind CSS.
 
 Users can add, edit, and delete products with key details such as name, price, description, and activation date.
